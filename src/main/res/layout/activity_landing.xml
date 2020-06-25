@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84f1e7a9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="25sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="15sp">
+        <ImageView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/newjustsearch" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter your Command"
+                android:textSize="20dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_voice"
+                android:layout_marginRight="50dp"
+                android:id="@+id/audioCommand"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/commnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Command Name : "
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Audio"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_audio"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/selectMusic"
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Name :"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/audioSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Name :"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <!--<Button
+                android:id="@+id/btn_startservice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Service"
+                android:textColor="#fff"
+                android:background="@color/blue"/>-->
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@color/blue"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

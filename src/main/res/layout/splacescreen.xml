@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84f1e7a9"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="4000dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/pro_txt"
+            android:layout_toEndOf="@+id/pro_txt"
+            android:layout_toRightOf="@+id/pro_txt"
+            android:background="@drawable/newjustsearch" />
+
+        <TextView
+            android:id="@+id/pro_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:text="JUST SEARCH"
+            android:textColor="#000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/track_txt"-->
+        <!--style="@style/TextAppearance.AppCompat.Title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/pro_txt"-->
+        <!--android:layout_below="@+id/pro_txt"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:shadowDx="2"-->
+        <!--android:shadowDy="2"-->
+        <!--android:shadowRadius="1.0"-->
+        <!--android:text="@string/slogan"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textSize="25sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:typeface="serif" />-->
+    </RelativeLayout>
+
+</FrameLayout>
